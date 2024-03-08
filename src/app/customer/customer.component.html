@@ -1,0 +1,16 @@
+<p>customer works!</p>
+<div *ngIf="customer">
+    <h2>List of customers</h2>
+    <div class="row">
+        <div class="col-md-4" *ngFor=" let cus of customer" routerLink="details/{{cus.id}}">
+            <div class="card">
+                <div class="card-body" >
+                    <h5 class="card-title">{{ cus.name }}</h5>
+                    <p class="card-text">Email: {{ cus.email }}</p>
+                </div>
+                <button type="button" name="" id="" class="btn btn-danger">delete</button>
+            </div>
+        </div>
+    </div>
+</div>`
+
